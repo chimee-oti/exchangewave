@@ -1,0 +1,32 @@
+/*
+ * jQueryTab v1.0
+ * Copyright 2012 dharma
+ * Free to use under the GPLv2 license.
+ * http://www.gnu.org/licenses/gpl-2.0.html
+ */
+
+/*  == tab heading */
+.f-tabs { 
+		overflow:hidden; list-style: none; padding: 0;
+}
+.f-tabs li{ float:left; }
+/* == accordion */
+.accordion_tabs {
+	display:none;
+	border-bottom: 1px solid #ccc;
+	padding: 10px;
+	font-weight:bold;
+}  
+
+/*  == tab content  */
+.f-tab_content{  
+	display:none; 
+}
+
+/* Media Queries
+***********************/
+@media screen and (max-width: 600px) { 
+	.f-tabs{ display:none; }
+	.accordion_tabs{ display:block; }
+	.f-tab_content{ border:none; }
+}
